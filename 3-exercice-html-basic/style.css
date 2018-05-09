@@ -1,0 +1,42 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	background-color: #FDFEFD;
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	width: 100%;
+	background-color: #487E4A;
+	text-align: center;
+	position: fixed;
+	display: block;
+	height: 200px;
+	top: 0;
+
+}
+h1{
+	color:#FDFEFD;
+	font-size: 60px;
+	vertical-align: center;
+}
+
+.menu{
+	width: 100%;
+	background-color: #B1FEC9;
+	text-align: center;
+	position: fixed;
+	display: block;
+	margin-top: 130px;
+}
+
+li{
+	display: inline-block;
+	padding: 15px;
+	color:#000;
+	font-size: 20px;
+}
+
+.citation{
+	background-image: url('img/pexels-photo-775707.jpeg');
+}
