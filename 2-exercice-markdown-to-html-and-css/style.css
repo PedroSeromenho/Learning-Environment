@@ -1,31 +1,39 @@
 body{
-	background-color: #FEFEFE
+	background-color: #DEF2DA
 }
 
 h1{
-	color: #F40444;
+	color: #2147B1;
 }
 
 h2{
-	color: #457250;
+	color: #FEAE87;
 }
 
 h3{
-	color: #457250;
+	color: #DEF2DA;
 }
 
 h4{
-	color: #457250;
+	color: #DEF2DA;
 }
 
 p{
-	color: #457250;
+	color: #2147B1;
 }
 
 a{
-	color: #F40444;	
+	color: #FEAE87;	
 }
 
 li{
-	color: #457250;
+	color: #2147B1;
+}
+
+th{
+	color: #FEAE87;
+}
+
+td{
+	color: #2147B1;
 }
