@@ -13,4 +13,4 @@
 
 ## Outils colorimétric
 
-- "[adobe.color](https://color.adobe.com/fr/)"
+- [adobe.color](https://color.adobe.com/fr/)
