@@ -13,4 +13,4 @@
 
 ## Outils colorimétric
 
-- Pour garder une cohérence colorimétrique sur ton projet "[adobe.color](https://color.adobe.com/fr/)"
+- "[adobe.color](https://color.adobe.com/fr/)"
