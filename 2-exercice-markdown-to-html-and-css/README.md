@@ -9,7 +9,7 @@
 
 ## Instructions
 
-- Améliorer l'exercice "[De Markdown to HTML](1-exercice-markdown-to-html.md)" en y ajoutant un fichier "style.css" et en le colorisant à ta sauce
+- Améliorer l'exercice "De Markdown to HTML" en y ajoutant un fichier "style.css" et en le colorisant à notre sauce
 
 ## Outils colorimétric
 
