@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+	max-width: 90%;
+	margin: 0 auto;
+	background: -webkit-linear-gradient(180deg, rgb(147, 194, 237), rgb(179, 255, 195));
+	background: linear-gradient(180deg, rgb(147, 194, 237), rgb(179, 255, 195));
+	background-image: url(https://www.rtl2007.fr/wp-content/uploads/2017/08/odeurs-chats-detestent-1.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: cover;
+
+
+
+
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 23px;
+	color: purple;
+
+}
+
+a:link{
+	font-size: 30px;
+}
+
+a:hover{
+	color: purple;
+}
+
+a:visited{
+	color: green;
+}
+
+blockquote.fermier{
+	width: 50%;
+	font-size: 25.6px;
+	background-color: #F5F5F5;
+	border-left: 3px solid #FF4500;
+	padding: 0px 0px 0px 30px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+blockquote.villageois{
+	border-left: 3px solid yellow;
+	width: 50%;
+	font-size: 25.6px;
+	background-color: #F5F5F5;
+	padding: 0px 0px 0px 30px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+header q{
+	background-color: yellow;
+}
+
+blockquote{
+	font-style: italic;
+}
+
+em.bien{
+	text-transform: uppercase;
+	color: green;
+}
+
+strong.mal{
+	text-transform: uppercase;
+	color: red;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+
+li:nth-child(1){
+	background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/bien.png);
+	background-repeat: no-repeat;
+	padding: 16px 16px 16px 60px;
+	padding-right: 50px;
+}
+
+li:nth-child(2){
+	background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/mal.png);
+	background-repeat: no-repeat;
+	padding: 16px 16px 16px 60px;
+}
+
+li:nth-child(3){
+	background-image: url(https://raw.githubusercontent.com/becodeorg/lovelace-2/master/01-La-prairie/html-css/progressive-enhancement/chat.png);
+	background-repeat: no-repeat;
+	padding: 16px 16px 16px 60px;
+}
+
+ p:first-child{
+	font-weight: bold;
+}
+
+img{
+	float: right;
+	margin: 50px;
+}
+
+h2{
+	font-family: 'Overlock', cursive;
+}
