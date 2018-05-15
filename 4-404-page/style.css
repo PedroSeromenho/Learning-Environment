@@ -1,0 +1,86 @@
+@font-face {
+font-family: 'Mister Pixel Tools';
+src:
+    local('Mister Pixel Tools'),
+    url('Mister Pixel Tools.otf');
+}
+
+@font-face {
+font-family: 'Mister Pixel Regular';
+src:
+    local('Mister Pixel Regular'),
+    url('Mister Pixel Regular.otf');
+}
+
+
+*{
+	padding: 0px;
+}
+
+body{
+	font-family: 'Mister Pixel Regular';
+	font-weight: normal;
+	font-style: normal;	
+	background-color: yellow;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 40s;
+}
+
+@keyframes example {
+    from {background-color: yellow;}
+    to {background-color: orange;}
+}
+
+.404{
+	font-family: 'Mister Pixel Regular';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	}
+
+h1{
+	text-align: center;
+	font-size: 25em;
+	line-height: 0px;
+}
+
+h2{
+		font-family: 'Mister Pixel Tools';
+	text-align: center;
+}
+
+h3{
+	font-family: 'Mister Pixel Tools';
+	text-align: center;
+	font-size: 9em;
+	line-height: 10px;
+}
+
+
+a{
+	text-align: center;
+	display: block;
+	color: black;
+	font-size: 4em;
+	width: 10%;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+
+a:hover{
+	font-family: 'Mister Pixel Tools';
+	text-align: center;
+	display: block;
+	color: black;
+}
+
+/*
+p{
+	font-family: 'Mister Pixel Tools';	
+	font-size: 5em;
+}
+*/
