@@ -1,10 +1,3 @@
-body{
-	font-family: 'Roboto', sans-serif;
-	background-color: #F2F2F2;
-	margin: 0;
-	padding: 0;
-}
-
 @font-face {
 font-family: 'PoetsenOne';
 font-style: normal;
@@ -12,15 +5,27 @@ font-weight: normal;
 src: local('PoetsenOne'), url('PoetsenOne-Regular.woff') format('woff');
 }
 
-#header{
-	width: 100%;
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #F2F2F2;
+	margin: 0;
+	padding: 0;
+}
+
+header{
 	position: fixed;
-	display: block;
-	height: 170px;
-	top: 0;
+	z-index: 5;
+	top: 0px;
+	width: 100%;
+	background-color: #F2F2F2;
+	height: 210px;
+}
+
+#header{
+	margin-top: 0px;
 	vertical-align: center;
 	z-index: 50;
-	background-color: #F2F2F2;
 }
 
 h1{
@@ -35,16 +40,13 @@ h1{
 
 #menu{
 	width: 100%;
-	height: 50px;
-	background-color: #F2F2F2;
-	position: fixed;
-	top: 170px;
+	height: 0px;
+	padding: 35px 0px 20px 0px;
 	z-index: 5020;
 	justify-content: center;
 	flex-direction: column;
 	display: flex;
 }
-
 
 
 #menu ul{
@@ -65,9 +67,85 @@ h1{
 	display: table-cell;
 	vertical-align: middle;	
 	text-align: center;
-	font-size: 0.7em;
+	font-size: 0.7em;		
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -220px;
+    visibility: hidden;
+}
+
+#citation{
+	width: 100%;
+	background: -webkit-radial-gradient(rgb(0, 255, 142), rgb(40, 183, 120));
+	background: radial-gradient(rgb(0, 255, 142), rgb(40, 183, 120));
+	color: #000;
+	margin-top: 208px;
+	height: 150px;
+	font-size: 30px;
+	position: relative;
+	text-align: center;
+}
+
+
+#citation p{	
+	margin: 0 auto;
+	line-height: 150px;
+   	text-align: center;
+   	text-transform: uppercase;
+   	font-family: 'PoetsenOne';
+}
+
+#videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+#videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#engagements-container{
+	top: 40px;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 26px;
+	display: block;
+	position: relative;
+}
+
+#row {
+  /*display: flex;*/
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.column {
+  flex: 30%;
+  max-width: 30%;
+
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
 }
 
 #asbl{
@@ -76,6 +154,14 @@ h1{
 	display: block;
 	width: 50%;
 	margin: 0 auto;
+}
+
+h2{
+	color:#000;
+	font-size: 40px;
+	font-family: 'PoetsenOne';
+	transform: rotate(-1.44deg);
+	text-align: center;
 }
 
 ol li {
@@ -108,55 +194,14 @@ ol li:before {
   font-family: 'PoetsenOne';
 }
 
-h2{
-	color:#000;
-	font-size: 40px;
-	font-family: 'PoetsenOne';
-	transform: rotate(-1.44deg);
-	text-align: center;
-}
-
 a{
 	color: #000;
 	text-decoration: none;
-	font-family: 'PoetsenOne';
 }
 a:hover{
 	text-decoration: underline;
-	font-family: 'PoetsenOne';
 }
 
-#citation{
-	width: 100%;
-	background: -webkit-radial-gradient(rgb(0, 255, 142), rgb(40, 183, 120));
-	background: radial-gradient(rgb(0, 255, 142), rgb(40, 183, 120));
-	color: #000;
-	margin-top: 220px;
-	height: 150px;
-	font-size: 30px;
-	position: relative;
-	text-align: center;
-}
-
-
-#citation p{	
-	margin: 0 auto;
-	line-height: 150px;
-   	text-align: center;
-   	text-transform: uppercase;
-}
-
-
-
-#engagements{
-	top: 40px;
-	width: 70%;
-	text-align: center;
-	margin: 0 auto;
-	font-size: 26px;
-	display: block;
-	position: relative;
-}
 
 #contact{
 	width: 100%;
@@ -178,72 +223,56 @@ a:hover{
 }
 
 
-#videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-
-#videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-#row {
-  /*display: flex;*/
-  flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 150px;
-}
-
-.column {
-  flex: 30%;
-  max-width: 30%;
-
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  height: auto;
-}
-
 @media only screen and (max-width: 1000px) {
- 
-  #row {
-  width: 90%;
-  margin: 0 auto;
-  flex-direction: column;
 
-
-    }
-
-    .column {
-    	margin: 0 auto;
-    	max-width: 100%;	
- 	
+header{
+	height: 310px;
 }
 
-#engagements{
+h1{
+	font-size: 6em;
+}
+
+#menu a{
+	font-size: 1em;
+}
+
+#citation{
+	margin-top: 310px;
+	font-size: 0.8em;
+	height: 100px;
+}
+
+#citation p {
+	font-size: 2em;
+	line-height: 100px;
+}
+
+#engagements-container{
 	width: 90%;
 	text-align: left;
 	margin-bottom: 70px;
+	font-size: 1em;
 }
 
-#engagements p{
+#engagements-container p{
 	margin-top: 0px;
+}
+
+#row {
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+    }
+
+.column {
+    	margin: 20px;
+    	max-width: 100%;		
 }
 
 #asbl h2{
 	margin-top: 0px;
+	font-size: 5em;
 }
 
 ol{
@@ -251,29 +280,22 @@ ol{
 	width: 100%;
 }
 
+ol li:before {
+  left: -70px;
+  font-size: 1.5em;
+}
+
+li a{
+	font-size: 1.5em;
+}
+
 #contact{
 	font-size: 1em;
 }
 
-h1{
-	font-size: 3em;
+#contact p{
+	font-size: 1.5em;
+	padding: 0px 50px 0px 50px;
 }
 
-#menu a{
-	font-size: 0.5em;
-}
-
-#header{
-	height: 110px;
-}
-
-#menu{
-	top: 110px;
-}
-
-#citation{
-	margin-top: 110px;
-	font-size: 0.8em;
-	height: 100px;
-}
 }
