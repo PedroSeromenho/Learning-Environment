@@ -25,6 +25,6 @@ Réaliser un minisite d'une page (= un *one-pager*) présentant une association 
 
 ### Maquette
 
-! [Mockup] (https://raw.githubusercontent.com/PedroSeromenho/Learning-Environment/master/3-exercice-html-basic/mockup.png)
+![Mockup](mockup.png?raw=true)
 
 
