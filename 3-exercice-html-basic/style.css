@@ -1,8 +1,8 @@
 @font-face {
-font-family: 'PoetsenOne';
-font-style: normal;
-font-weight: normal;
-src: local('PoetsenOne'), url('PoetsenOne-Regular.woff') format('woff');
+	font-family: 'PoetsenOne';
+	font-style: normal;
+	font-weight: normal;
+	src: local('PoetsenOne'), url('PoetsenOne-Regular.woff') format('woff');
 }
 
 
@@ -125,27 +125,36 @@ a.anchor {
 	position: relative;
 }
 
+span.logo{
+	font-family: 'PoetsenOne'; 
+	background-color: #F2F2F2
+}
+
+span.keywords{
+	color: #31D590;
+	font-weight: bold;
+}
+
 #row {
-  /*display: flex;*/
-  flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 150px;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 150px;
 }
 
 .column {
-  flex: 30%;
-  max-width: 30%;
+	flex: 30%;
+	max-width: 30%;
 
 }
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  height: auto;
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
 }
 
 #asbl{
@@ -165,9 +174,9 @@ h2{
 }
 
 ol li {
-  counter-increment: list;
-  list-style-type: none;
-  position: relative;
+	counter-increment: list;
+	list-style-type: none;
+	position: relative;
 }
 
 li{
@@ -185,13 +194,13 @@ li a:hover{
 }
 
 ol li:before {
-  color: #2e8b57;
-  content: counter(list) ".";
-  left: -32px;
-  position: absolute;
-  text-align: right;
-  width: 26px;
-  font-family: 'PoetsenOne';
+	color: #2e8b57;
+	content: counter(list) ".";
+	left: -32px;
+	position: absolute;
+	text-align: right;
+	width: 26px;
+	font-family: 'PoetsenOne';
 }
 
 a{
@@ -266,8 +275,13 @@ h1{
     }
 
 .column {
-    	margin: 20px;
-    	max-width: 100%;		
+    margin: 20px;
+    max-width: 100%;		
+}
+
+#asbl{
+	top: 275px;
+	padding-bottom: 200px;
 }
 
 #asbl h2{
@@ -281,8 +295,8 @@ ol{
 }
 
 ol li:before {
-  left: -70px;
-  font-size: 1.5em;
+	left: -70px;
+	font-size: 1.5em;
 }
 
 li a{
