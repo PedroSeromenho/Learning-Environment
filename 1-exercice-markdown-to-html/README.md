@@ -1,6 +1,6 @@
 # 1-exercice-markdown-to-html
 
-[voir le site](#)
+[voir le site]( https://pedroseromenho.github.io/learning-html-css/1-exercice-markdown-to-html)
 
 ## Objectifs
 * Explorer le language HTML
