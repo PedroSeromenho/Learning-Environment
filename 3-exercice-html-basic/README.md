@@ -25,6 +25,6 @@ Réaliser un minisite d'une page (= un *one-pager*) présentant une association 
 
 ### Maquette
 
-![Mockup] (mockup.png?raw=true)
+![Mockup](mockup.png?raw=true)
 
 
