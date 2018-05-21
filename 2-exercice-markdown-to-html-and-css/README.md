@@ -1,6 +1,6 @@
 # Learning-Environment
 
-[Voir le site](https://pedroseromenho.github.io/Learning-Environment/2-exercice-markdown-to-html-and-css/index.html)
+[Voir le site](https://pedroseromenho.github.io/learning-html-css/2-exercice-markdown-to-html-and-css/index.html)
 
 ## Objectifs
 
