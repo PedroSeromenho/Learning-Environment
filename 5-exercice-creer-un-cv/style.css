@@ -28,14 +28,13 @@ body{
 .sheet{
 	width: 100%;
 	height: auto;
-	background-color: #fff;
   	margin: 0 auto;
   	position: relative;
   	display: flex;
 }
 
 .left-bl{
-	width: 70%;
+	width: 75%;
 	margin: 0 auto;
 	padding: 45px;
 	padding-bottom: 0px;
@@ -47,10 +46,10 @@ body{
 }
 
 .right-bl{
-	width: 30%;
+	width: 25%;
 	margin: 0 auto;
-	padding: 45px;
-	background-color: yellow;
+	padding: 40px;
+	background-color: #FFFE9F;
 	height: 100vh;
 	position: fixed;
 	z-index: 2;
@@ -59,16 +58,28 @@ body{
 	overflow: scroll;
 }
 
+.right-bl section i{
+	margin-right: 25px;
+}
+
+.right-bl h3{
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
 header{
 	display: flex;
 	font-family: sans-serif;
 	margin-bottom: 20px;
+	font-family: CharisSILW, sans-serif;
+	font-weight: normal;
 }
 
 .nom{
 	flex: 3;
 	margin: 0 auto;
 	font-size: 2em;
+	margin-top: 12px;
 
 }
 
@@ -77,15 +88,17 @@ header{
 	line-height: 60px;
 	font-size: 1.3em;
 	border-bottom: 1px solid;
+	padding-bottom: 20px;
 }
 
-.nom h3{
+.nom h2{
 	margin: 0 auto;
 	line-height: 45px;
 	font-size: 0.9em;
 	font-weight: normal;
 	font-family: CharisSILW;
-	margin-top: 40px;
+	margin-top: 20px;
+	font-family: sans-serif;
 }
 
 .nom a{
@@ -93,10 +106,14 @@ header{
 	line-height: 60px;
 	font-size: 0.5em;
 	margin-top: 20px;
-	font-family: CharisSILW;
+	font-family: sans-serif;
 	color: black;
-	transition: background-color ease 0.5s;
+	transition: all ease 0.5s;
 	text-decoration: none;
+	border: 1px solid black;
+	padding: 10px;
+	box-shadow: 5px 5px black;
+	text-transform: uppercase;
 }
 
 .nom a:hover{
@@ -104,18 +121,14 @@ header{
 	line-height: 60px;
 	font-size: 0.5em;
 	margin-top: 20px;
-	font-family: CharisSILW;
-	background-color: yellow;
+	border: 1px solid #6B6B6B;
+	box-shadow: 5px 5px #6B6B6B;
+	color: #6B6B6B;
 }
 
 .portrait{
 	padding: 0px 50px 0px 0px;
 	flex: 1;
-}
-
-.portrait img{
-	width: 100%;
-	margin: 0 auto;
 }
 
 .personal, .contact, .work, .education, .software{
@@ -126,8 +139,13 @@ header{
 	border-bottom: 1px solid;
 }
 
-article h2{
+article h3{
 	border-bottom: 1px solid;
+	padding-bottom: 3px;
+}
+
+h3{
+	font-size: 25px;
 }
 
 .container{
@@ -143,8 +161,9 @@ section{
 	padding: 0px 0px 0px 50px;
 }
 
-.timeline h2{
+.timeline h3{
 	border-bottom: 1px solid;
+	padding-bottom: 3px;
 }
 
 .time-ctr h4{
@@ -162,18 +181,32 @@ section{
 	margin-top: 8px;
 }
 
-.online h2{
+p.smyle i{
+	display: inline-block;
+}
+
+i{
+	margin-right: 7px;
+}
+
+.online h3{
 	border-bottom: 1px solid;
 }
 
-.call h2{
+.call h5, .write h5{
 	margin: 0px;
-	font-size: 2em;
+	font-size: 1em;
+	font-family: sans-serif;
+	font-weight: 600;
 }
 
-.call p{
+.write{
+	margin-top: 30px;
+}
+
+.call p, .write p{
 	margin: 0px;
-	font-size: 1.3em;
+	font-size: 1em;
 	margin-top: 10px;
 }
 
@@ -189,14 +222,16 @@ section{
 
 .left p{
 	font-weight: 500;
-	padding-bottom: 5px;
+	padding-bottom: 7px;
+    margin-top: 5px;
 }
 
 .right p{
-	padding-bottom: 5px;
+	padding-bottom: 7px;
+    margin-top: 5px;
 }
 
-h2{
+h3{
 	font-family: CharisSILW, sans-serif;	
 }
 
@@ -205,8 +240,15 @@ h2{
 }
 
 .aboutme h3{
+	/*
 	font-family: CharisSILW, sans-serif;
+	*/
 	border-bottom: 1px solid;
+	padding-bottom: 10px;
+}
+
+.aboutme p{
+	font-size: 16px;
 }
 
 .references{
@@ -214,8 +256,11 @@ h2{
 }
 
 .references h3{
+	/*
 	font-family: CharisSILW, sans-serif;
+	*/
 	border-bottom: 1px solid;
+	padding-bottom: 10px;
 
 }
 
@@ -236,15 +281,25 @@ ul li{
 }
 
 .icon:hover {
-color: yellow;
+color: #6B6B6B;
 }
 
 .ref h5{
 	font-size: 15px;
+	margin-bottom: 0px;
 }
 
 .ref p{
-	line-height: 5px;
+	font-size: 14px;
+}
+
+.ref p a{
+	color: black;
+	transition: color ease 0.5s;
+}
+
+.ref p a:hover{
+	color: #6B6B6B;
 }
 
 .ref{
@@ -343,7 +398,7 @@ color: yellow;
     padding-top: 10px;
 }
 
-article h2{
+article h3{
 	font-size: 50px;
 }
 
