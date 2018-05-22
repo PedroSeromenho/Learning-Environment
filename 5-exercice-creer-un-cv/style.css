@@ -292,6 +292,7 @@ color: yellow;
 	right: 0px;
 	box-sizing: border-box;
 	overflow: auto;
+	font-size: 2em;
 }
 
 .container{
@@ -305,12 +306,10 @@ color: yellow;
 }
 
 .left{
-	font-size: 30.5px;
 	font-size: 1.934em;
 }
 
 .right{
-	font-size: 30.5px;
 	font-size: 1.934em;
 }
 
@@ -322,6 +321,14 @@ color: yellow;
 .nom h3{
 	line-height: 55px;
     font-size: 1.3em;
+}
+
+.aboutme h3{
+	font-size: 50px;
+}
+
+.references h3{
+	font-size: 50px;
 }
 
 .nom a {
