@@ -1,7 +1,7 @@
 # Un one-pager pour une association caritative
 
 ## No Javel Asbl
-[Lien vers le site](https://pedroseromenho.github.io/Learning-Environment/3-exercice-html-basic/)
+[Lien vers le site](https://pedroseromenho.github.io/learning-html-css/3-exercice-html-basic/)
 
 ## Objectifs d'apprentissage
 - Comprendre le prototypage et faire un premier prototype dans Balsamiq Mockup
