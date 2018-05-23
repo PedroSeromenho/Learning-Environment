@@ -373,7 +373,7 @@ color: #6B6B6B;
     font-size: 1.9em;
 }
 
-.nom h3{
+.nom h2{
 	line-height: 55px;
     font-size: 1.3em;
 }
@@ -394,12 +394,16 @@ color: #6B6B6B;
 	display: none;
 }
 
+.write{
+	display: none;
+}
+
 .right-bl {
     padding-top: 10px;
 }
 
 article h3{
-	font-size: 50px;
+	font-size: 2em;
 }
 
 .online{
@@ -425,5 +429,9 @@ color: black;
 .onlinemob h2{
 	border-bottom: 1px solid;
     padding-top: 15px;
+}
+
+.right p i {
+	margin-right: 20px;
 }
 }
