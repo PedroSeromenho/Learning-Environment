@@ -1,6 +1,6 @@
 # Curriculum Vitae
 
-[voir le site] (https://pedroseromenho.github.io/learning-html-css/5-exercice-creer-un-cv/)
+[voir le site](https://pedroseromenho.github.io/learning-html-css/5-exercice-creer-un-cv/)
 
 ## Objectifs
 - Améliorer ses compétences en HTML et CSS
