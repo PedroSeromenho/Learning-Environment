@@ -240,9 +240,6 @@ h3{
 }
 
 .aboutme h3{
-	/*
-	font-family: CharisSILW, sans-serif;
-	*/
 	border-bottom: 1px solid;
 	padding-bottom: 10px;
 }
@@ -256,9 +253,6 @@ h3{
 }
 
 .references h3{
-	/*
-	font-family: CharisSILW, sans-serif;
-	*/
 	border-bottom: 1px solid;
 	padding-bottom: 10px;
 
@@ -447,5 +441,9 @@ color: black;
 .ref p{
 	font-size: 16px;
 	line-height: 8px;
+}
+
+.left-bl h3{
+	font-size: 2em;
 }
 }
