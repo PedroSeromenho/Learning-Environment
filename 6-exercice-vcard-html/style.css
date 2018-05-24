@@ -152,6 +152,7 @@ footer p{
   .info-ctr{
     display: flex;
     flex-direction: column;
+    margin: 50px;
   }
 
   a.info-1, a.info-2, a.info-3{
@@ -181,6 +182,7 @@ footer p{
   }
 
   footer{
+    margin: 50px;
     margin-top: 40px;
   }
 
