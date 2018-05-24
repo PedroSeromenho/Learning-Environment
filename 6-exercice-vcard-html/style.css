@@ -11,10 +11,6 @@
 body{
   padding: 0px;
   margin: 0px;
-/*
-  background: -webkit-linear-gradient(2deg, rgb(125, 183, 255), rgb(255, 255, 255));
-  background: linear-gradient(2deg, rgb(125, 183, 255), rgb(255, 255, 255));
-*/
 }
 
 header{
@@ -36,9 +32,14 @@ header h1{
 }
 
 .links i{
-  margin-top: 50px;
+  margin-top: 65px;
   margin-left: 15px;
   color: blue;
+  transition: all ease 0.5s;
+}
+
+a i:hover{
+  color: black;
 }
 
 header h1{
@@ -47,79 +48,6 @@ header h1{
   font-weight: normal;
 }
 
-/*
-
-section.info-ctr-color{
-  background: -webkit-linear-gradient(0deg, rgb(0, 0, 255), rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(0, 0, 255), rgb(255, 255, 255));
-}
-
-*/
-
-.info-ctr{
-  padding-bottom: 30px;
-  margin: 50px 80px 0px 80px;
-  display: flex;
-}
-
-.info-1{
-  flex: 1;
-  color: blue;
-  border: 1px solid blue;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-left: 30px;
-}
-
-.info-2{
-  flex: 1;
-  margin-left: 30px;
-  color: blue;
-  border: 1px solid blue;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.info-1 h3, .info-2 h3{
-  font-family: Bagnard;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.info-1 p, .info-2 p{
-  font-family: Micross;
-  font-size: 16px;
-  margin-top: 0px;
-}
-
-/*
-
-.left-ctr{
-  font-family: Micross;
-  font-size: 16px;
-  color: blue;
-  line-height: 30px;
-}
-
-.right-ctr{
-  flex: 3;
-  font-family: Micross;
-  font-size: 16px;
-  color: blue;
-  margin-left: 50px;
-  line-height: 30px;
-}
-
-*/
-
-.image{
-  flex: 2;
-}
-
-.image img{
-  width: 100%;
-  margin-right: 30px;
-}
 
 .about p {
   font-family: Bagnard;
@@ -128,4 +56,130 @@ section.info-ctr-color{
   color: blue;
   margin: 50px 80px;
   border-bottom: 1px solid blue;
+}
+
+.info-ctr{
+  padding-bottom: 0px;
+  margin: 50px 80px 0px 80px;
+  display: flex;
+}
+
+a.info-1{
+  flex: 1;
+  color: blue;
+  border: 1px solid blue;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+a.info-2{
+  flex: 1;
+  margin-left: 30px;
+  color: blue;
+  border: 1px solid blue;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+a.info-3{
+  flex: 1;
+  margin-left: 30px;
+  color: blue;
+  border: 1px solid blue;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+a.info-1:hover, a.info-2:hover, a.info-3:hover{
+background-color: blue;
+color: white;
+}
+
+a.info-1 h3, a.info-2 h3, a.info-3 h3{
+  font-family: Bagnard;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section.image{
+  display: none;
+}
+
+footer{
+  border-top: 1px solid blue;
+  margin: 50px 80px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+footer p{
+  font-family: Bagnard;
+  font-size: 1em;
+  color: blue;
+}
+
+@media (max-width: 1000px) {
+
+  header h1{
+    flex: 3;
+    color: blue;
+    font-size: 4em;
+  }
+
+  .links i{
+    margin-top: 45px;
+  }
+
+  .about p {
+    font-family: Bagnard;
+    font-size: 1.5em;
+  }
+
+  .info-ctr{
+    display: flex;
+    flex-direction: column;
+  }
+
+  a.info-1, a.info-2, a.info-3{
+    margin-left: 0px;
+  }
+
+  a.info-2, a.info-3{
+    margin-top: 35px;
+  }
+
+  a.info-1 h3, a.info-2 h3, a.info-3 h3{
+    font-size: 2.5em;
+      margin-bottom: 20px;
+  }
+
+  section.image{
+    display: block;
+    margin: 50px 80px 0px 80px;
+    border-top: 1px solid blue;
+    padding-top: 50px;
+  }
+
+  section.image img{
+    width: 100%;
+    height: auto;
+  }
+
+  footer{
+    margin-top: 40px;
+  }
+
+  footer p{
+    font-size: 0.5em;
+  }
+
 }
