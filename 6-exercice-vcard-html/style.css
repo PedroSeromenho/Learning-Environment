@@ -135,13 +135,14 @@ footer p{
   }
 
   .links i{
-    margin-top: 50px;
+    margin-top: 75px;
   }
 
   .about p {
     font-family: Bagnard;
     font-size: 3em;
     margin: 50px;
+    margin-bottom: 80px;
   }
 
   .info-ctr{
