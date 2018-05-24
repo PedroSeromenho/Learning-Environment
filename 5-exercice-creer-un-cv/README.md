@@ -18,6 +18,12 @@
 - Jouer avec [css grid garden](http://cssgridgarden.com/)
 - Améliorer mon CV avec mes nouvelles conaissances ([inspiration](https://www.visualcv.com/images/visualcv-resume-templates.jpg))
 
-## Preview
 
-![Mockup](preview.png?raw=true)
+### Mobile
+
+![Mockup](assets/mobile.png?raw=true)
+
+
+### Desktop
+
+![Mockup](assets/desktop.png?raw=true)
