@@ -17,7 +17,7 @@
 	font-weight: bold;
 	font-style: italic;
 	src: url(fonts/CharisSIL-BI.woff);
-}	
+}
 
 body{
 	padding: 0px;
@@ -28,9 +28,9 @@ body{
 .sheet{
 	width: 100%;
 	height: auto;
-  	margin: 0 auto;
-  	position: relative;
-  	display: flex;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
 }
 
 .left-bl{
@@ -45,34 +45,17 @@ body{
 	box-sizing: border-box;
 }
 
-.right-bl{
-	width: 25%;
-	margin: 0 auto;
-	padding: 40px;
-	background-color: #FFFE9F;
-	height: 100vh;
-	position: fixed;
-	z-index: 2;
-	right: 0px;
-	box-sizing: border-box;
-	overflow: scroll;
-}
-
-.right-bl section i{
-	margin-right: 25px;
-}
-
-.right-bl h3{
-	font-size: 18px;
-	font-family: sans-serif;
-}
-
 header{
 	display: flex;
 	font-family: sans-serif;
 	margin-bottom: 20px;
 	font-family: CharisSILW, sans-serif;
 	font-weight: normal;
+}
+
+.portrait{
+	padding: 0px 50px 0px 0px;
+	flex: 1;
 }
 
 .nom{
@@ -126,9 +109,22 @@ header{
 	color: #6B6B6B;
 }
 
-.portrait{
-	padding: 0px 50px 0px 0px;
-	flex: 1;
+.container{
+	display: flex;
+}
+
+section{
+	flex: 2.5;
+}
+
+article h3{
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+}
+
+h3{
+	font-size: 25px;
+  font-family: CharisSILW, sans-serif;
 }
 
 .personal, .contact, .work, .education, .software{
@@ -139,21 +135,25 @@ header{
 	border-bottom: 1px solid;
 }
 
-article h3{
-	border-bottom: 1px solid;
-	padding-bottom: 3px;
+.right{
+	flex: 3;
+	margin-top: -20px;
 }
 
-h3{
-	font-size: 25px;
+.left{
+	flex: 1;
+	margin-top: -20px;
 }
 
-.container{
-	display: flex;
+.left p{
+	font-weight: 500;
+	padding-bottom: 7px;
+    margin-top: 5px;
 }
 
-section{
-	flex: 2.5;
+.right p{
+	padding-bottom: 7px;
+    margin-top: 5px;
 }
 
 .timeline{
@@ -181,6 +181,52 @@ section{
 	margin-top: 8px;
 }
 
+.online h3{
+	border-bottom: 1px solid;
+}
+
+ul{
+	padding-left: 0px;
+}
+
+ul li{
+	display: inline;
+}
+
+.icon {
+ display: inline-block;
+ color: black;
+ margin-right: 15px;
+ margin-bottom: 15px;
+ transition: color ease 0.5s;
+}
+
+.icon:hover {
+color: #6B6B6B;
+}
+
+.right-bl{
+	width: 25%;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: #FFFE9F;
+	height: 100vh;
+	position: fixed;
+	z-index: 2;
+	right: 0px;
+	box-sizing: border-box;
+	overflow: scroll;
+}
+
+.right-bl h3{
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+.right-bl section i{
+	margin-right: 25px;
+}
+
 p.smyle i{
 	display: inline-block;
 }
@@ -189,8 +235,8 @@ i{
 	margin-right: 7px;
 }
 
-.online h3{
-	border-bottom: 1px solid;
+.write{
+	margin-top: 30px;
 }
 
 .call h5, .write h5{
@@ -200,39 +246,10 @@ i{
 	font-weight: 600;
 }
 
-.write{
-	margin-top: 30px;
-}
-
 .call p, .write p{
 	margin: 0px;
 	font-size: 1em;
 	margin-top: 10px;
-}
-
-.right{
-	flex: 3;
-	margin-top: -20px;
-}
-
-.left{
-	flex: 1;
-	margin-top: -20px;
-}
-
-.left p{
-	font-weight: 500;
-	padding-bottom: 7px;
-    margin-top: 5px;
-}
-
-.right p{
-	padding-bottom: 7px;
-    margin-top: 5px;
-}
-
-h3{
-	font-family: CharisSILW, sans-serif;	
 }
 
 .aboutme{
@@ -258,33 +275,19 @@ h3{
 
 }
 
-ul{
-	padding-left: 0px;
-}
-
-ul li{
-	display: inline;
-}
-
-.icon {
- display: inline-block;
- color: black;
- margin-right: 15px;
- margin-bottom: 15px;
- transition: color ease 0.5s;
-}
-
-.icon:hover {
-color: #6B6B6B;
+.ref{
+	margin-bottom: 40px;
 }
 
 .ref h5{
 	font-size: 15px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 }
 
 .ref p{
 	font-size: 14px;
+  margin-top: 3px;
+  margin-bottom: 0px;
 }
 
 .ref p a{
@@ -294,10 +297,6 @@ color: #6B6B6B;
 
 .ref p a:hover{
 	color: #6B6B6B;
-}
-
-.ref{
-	margin-bottom: 40px;
 }
 
 .onlinemob{
@@ -310,10 +309,10 @@ color: #6B6B6B;
 	width: 100%;
 	height: auto;
 	background-color: #fff;
-  	margin: 0 auto;
-  	position: inherit;
-  	display: flex;
-  	flex-direction: column;
+  margin: 0 auto;
+  position: inherit;
+  display: flex;
+  flex-direction: column;
 }
 
 .left-bl{
@@ -329,37 +328,8 @@ color: #6B6B6B;
 	padding-bottom: 50px;
 }
 
-.right-bl{
-	width: 100%;
-	margin: 0 auto;
-	padding: 45px;
-	background: -webkit-linear-gradient(2deg, rgb(255, 254, 159), rgb(255, 255, 255));
-	background: linear-gradient(2deg, rgb(255, 254, 159), rgb(255, 255, 255));
-	height: auto;
-	position: inherit;
-	z-index: 2;
-	right: 0px;
-	box-sizing: border-box;
-	overflow: auto;
-	font-size: 2em;
-}
-
-.container{
-	display: flex;
-	flex-direction: column;
-}
-
-.timeline{
-	padding: 0px;
-	display: none;
-}
-
-.left{
-	font-size: 1.934em;
-}
-
-.right{
-	font-size: 1.934em;
+.left-bl h3{
+	font-size: 3.5em;
 }
 
 .nom h1{
@@ -372,44 +342,38 @@ color: #6B6B6B;
     font-size: 1.5em;
 }
 
-.aboutme h3{
-	font-size: 50px;
-}
-
-.references h3{
-	font-size: 50px;
-}
-
 .nom a {
 	display: none;
-}	
-
-.call{
-	display: none;
 }
 
-.write{
-	display: none;
-}
-
-.right-bl {
-    padding-top: 10px;
+.container{
+	display: flex;
+	flex-direction: column;
 }
 
 article h3{
 	font-size: 2em;
 }
 
-.online{
+.left{
+	font-size: 1.934em;
+}
+
+.right{
+	font-size: 1.934em;
+}
+
+.right p i {
+	margin-right: 20px;
+}
+
+.timeline{
+	padding: 0px;
 	display: none;
 }
 
-.onlinemob .icon {
- display: inline-block;
- color: black;
- margin-right: 50px;
- margin-bottom: 15px;
- transition: color ease 0.5s;
+.online{
+	display: none;
 }
 
 .onlinemob .icon:hover {
@@ -425,12 +389,48 @@ color: black;
     padding-top: 15px;
 }
 
-.right p i {
-	margin-right: 20px;
+.onlinemob .icon {
+ display: inline-block;
+ color: black;
+ margin-right: 50px;
+ margin-bottom: 15px;
+ transition: color ease 0.5s;
+}
+
+.right-bl{
+	width: 100%;
+	margin: 0 auto;
+	padding: 45px;
+	background: -webkit-linear-gradient(2deg, rgb(255, 254, 159), rgb(255, 255, 255));
+	background: linear-gradient(2deg, rgb(255, 254, 159), rgb(255, 255, 255));
+	height: auto;
+	position: inherit;
+	z-index: 2;
+	right: 0px;
+	box-sizing: border-box;
+	overflow: auto;
+	font-size: 2em;
+  padding-top: 10px;
+}
+
+.call{
+	display: none;
+}
+
+.write{
+	display: none;
+}
+
+.aboutme h3{
+	font-size: 50px;
 }
 
 .aboutme p{
 	font-size: 1.2em;
+}
+
+.references h3{
+	font-size: 50px;
 }
 
 .ref h5{
@@ -441,9 +441,5 @@ color: black;
 .ref p{
 	font-size: 16px;
 	line-height: 8px;
-}
-
-.left-bl h3{
-	font-size: 3.5em;
 }
 }
