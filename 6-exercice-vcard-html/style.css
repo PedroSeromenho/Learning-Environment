@@ -3,11 +3,6 @@
   src: url(fonts/Bagnard.otf);
 }
 
-@font-face {
-  font-family: Micross;
-  src: url(fonts/micross.ttf);
-}
-
 body{
   padding: 0px;
   margin: 0px;
@@ -157,7 +152,6 @@ footer p{
 
   a.info-1, a.info-2, a.info-3{
     margin-left: 0px;
-    font-weight: normal;
   }
 
   a.info-2, a.info-3{
@@ -167,6 +161,7 @@ footer p{
   a.info-1 h3, a.info-2 h3, a.info-3 h3{
     font-size: 3em;
     margin-bottom: 20px;
+    font-weight: normal;
   }
 
   section.image{
