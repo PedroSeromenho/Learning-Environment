@@ -272,7 +272,6 @@ i{
 .references h3{
 	border-bottom: 1px solid;
 	padding-bottom: 10px;
-
 }
 
 .ref{
@@ -286,8 +285,8 @@ i{
 
 .ref p{
 	font-size: 14px;
-  margin-top: 3px;
-  margin-bottom: 0px;
+ 	margin-top: 3px;
+  	margin-bottom: 0px;
 }
 
 .ref p a{
@@ -441,5 +440,7 @@ color: black;
 .ref p{
 	font-size: 16px;
 	line-height: 8px;
+	margin-top: 10px;
+  	margin-bottom: 0px;
 }
 }
