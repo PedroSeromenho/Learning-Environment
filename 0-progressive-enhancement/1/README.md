@@ -3,6 +3,16 @@
 
 ## Objectifs
 
+**Exercices :**  
+
+- Retranscris [ce document Texte](doc-le-paysan-chinois.txt) en sémantique html, donc en utilisant les bons blocs html : Utilise les balises suivantes: `h1`, `h2`, `blockquote`, `q`, `img`, `p`, `img`, `hr`, `figure` et `caption`, `table`, `th`, `tr`, `td`, `ul` ou `ol` et `li`. 
+- Pas de `div` ni de `span` : elles n'apportent aucune sémantique. 
+- Retrouve, pour chacune de ces balises, l'origine de leur nom (c'est comme cela qu'on les retient). En cas de doute, cherche la réponse sur [html5doctor.com](http://html5doctor.com).
+- Ajoute deux ou trois liens de ton choix dans la page html via la balise `a`
+- Y-a-t-il une partie que l'on pourrait considérer comme une entête? Si oui, regroupe la dans une balise `header`. 
+- Et un pied de page? Si oui, regroupe ce contenu là dans une balise `footer`
+- Mets toutes les instances des mots "Bien" et "Mal" dans une balise `span` , `em` ou `strong`. 
+
 - Rajouter l'attribut `Alt` aux images. A quoi sert cet attribut?  
 - Ajoute une classe "*bien*" ou "*mal*" aux balises entourant les mots "Bien" et "Mal".
 - Trouve l'attribut des liens permettant d'indiquer la page vers laquelle doit mener le lien, et ajoute-le.  
@@ -10,50 +20,6 @@
 - Trouve l'attribut permettant d'afficher une petite boite de texte au survol des liens, comme ceci :   
 ![Exemple](https://cdn.searchenginejournal.com/wp-content/uploads/2008/09/title-usability.jpg)
 	
-## 2. Le CSS : contrôler le rendu visuel
-
-Le CSS est la techno qui te permet de contrôler l'aspect visuel de ton contenu.  Par exemple, tu peux contrôler l'aspect du texte via ces propriétés : `font-style`, `font-size`, `color`, `line-height`.
-
-Autrement dit, si le html te permet de structurer le contenu, le CSS te permet de le **maquiller**, le rendre plus visuellement attractif.
-
-### Syntaxe
-
-```css
-selecteur {
-	propriete : valeur ;
-	propriete : valeur ;
-	/* Ceci est un commentaire */
-	propriete : valeur ;
-	...
-}  
-```
-
-**Observations :**
-
-- Chaque ligne doit se terminer par un `;`
-- Tu peux déclarer autant de propriétés que tu le souhaites. Tu peux même déclarer deux fois la même propriété. Dans ce cas, ce sera la dernière qui sera prise en compte (d'où le terme "*cascading*").
-- l'élément stylisé s'appelle "le sélecteur". Il est suivi d'un bloc contenant une ou plusieurs propriétés, enfermées dans des accolades `{}`
-
-**Exemple** : à ton avis, que fait ce bout de code ? 
-
-```css
-p{
-	font-size: 12px;
-	font-family: Arial, sans-serif;
-	color: purple;
-}
-```
-
-Pour que le navigateur le prenne en compte, ton CSS doit se trouver soit :
-
-- dans ton fichier html, dans une balise `<style>`
-- dans un fichier css externe, lié à ton html via la balise `<link>`
-
-
-### Concept 1: sélecteurs CSS
-
-Les sélecteurs CSS te permettent de sélectionner dans ton html le contenu à styliser via la balise le contenant.
-
 
 **Exercices :**  
 
