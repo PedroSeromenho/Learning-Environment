@@ -48,17 +48,6 @@ Les balises permettent d'indiquer la fonction sémantique d'une portion de conte
 <p>Ceci est un paragraphe.</p>
 ```
 
-**Exercices :**  
-
-- Retranscris [ce document Texte](doc-le-paysan-chinois.txt) en sémantique html, donc en utilisant les bons blocs html : Utilise les balises suivantes: `h1`, `h2`, `blockquote`, `q`, `img`, `p`, `img`, `hr`, `figure` et `caption`, `table`, `th`, `tr`, `td`, `ul` ou `ol` et `li`. 
-- Pas de `div` ni de `span` : elles n'apportent aucune sémantique. 
-- Retrouve, pour chacune de ces balises, l'origine de leur nom (c'est comme cela qu'on les retient). En cas de doute, cherche la réponse sur [html5doctor.com](http://html5doctor.com).
-- Ajoute deux ou trois liens de ton choix dans la page html via la balise `a`
-- Y-a-t-il une partie que l'on pourrait considérer comme une entête? Si oui, regroupe la dans une balise `header`. 
-- Et un pied de page? Si oui, regroupe ce contenu là dans une balise `footer`
-- Mets toutes les instances des mots "Bien" et "Mal" dans une balise `span` , `em` ou `strong`. 
-
-
 #### Les attributs html
 Ils permettent de définir les caractéristiques des balises.  Imagine qu'il y ait une balise "humain". 
 
@@ -83,7 +72,37 @@ Voici résumée la syntaxe des balises, attributs et valeurs :
 ```html
 <balise attribut="valeur">Contenu</balise> 
 ``` 
+#### Sortir du flux 
 
+Le flux est le comportement par défaut. Tu peux avoir besoin qu'un élément sorte du flux de position. 
+
+`position : static | relative | absolute | fixed ;`   
+
+La propriété `position` permet de positionner un élément n'importe où (via les propriétés `top` et `left`), à partir des coordonnées de son premier parent en `position: relative` ou `static`. [Expérimente via ce Pen](https://codepen.io/pixeline/pen/vmzNjw?).
+
+**Exercices :**  
+
+- Réalise une [notification d'interface](https://codepen.io/pixeline/pen/dWqMxe)
+- [exercice de position absolue](https://codepen.io/pixeline/pen/JNaKJv) 
+
+#### Aller plus loin 
+Plus d'informations sur le positionnement CSS: http://fr.learnlayout.com
+
+## 3. Web fonts
+
+Par défaut, le navigateur utilise les polices de caractères installées sur l'ordinateur du client. Cependant, tu peux utiliser des polices de caractères spécifiques : les **webfonts**.
+
+**Exercices :**
+
+- Va sur [Google Webfonts](https://fonts.google.com/): change la police de caractère de ton document à celle-ci : Open Sans. Si tu n'y arrives pas, [fais d'abord cet exercice](https://d157rqmxrxj6ey.cloudfront.net/chadsansing/20997/) (clique sur le bouton "remix").
+- Choisis une autre police pour les titres, suffisamment différente.
+
+## 4. Outils utiles
+
+- Élimine le css utilisé par défaut par les navigateurs ([reset.css](https://www.alsacreations.com/astuce/lire/36-reset-css.html)), ou pars sur une base normalisée ([normalize.css](https://github.com/necolas/normalize.css))  
+- Vérifie que ton HTML est **valide** via le [validateur du w3c](https://validator.w3.org/)
+- Vérifie que ton HTML permet **une bonne SEO organique**, via d'autres outils comme le [Google Lighthouse Test](https://developers.google.com/web/tools/lighthouse/) 
+- Installe [Emmet](https://emmet.io/) dans ton éditeur de code.
 
 ### Crédits
 
