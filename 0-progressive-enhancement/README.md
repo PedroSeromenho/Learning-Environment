@@ -72,6 +72,53 @@ Voici résumée la syntaxe des balises, attributs et valeurs :
 ```html
 <balise attribut="valeur">Contenu</balise> 
 ``` 
+
+## 2. Le CSS : contrôler le rendu visuel
+
+Le CSS est la techno qui te permet de contrôler l'aspect visuel de ton contenu.  Par exemple, tu peux contrôler l'aspect du texte via ces propriétés : `font-style`, `font-size`, `color`, `line-height`.
+
+Autrement dit, si le html te permet de structurer le contenu, le CSS te permet de le **maquiller**, le rendre plus visuellement attractif.
+
+
+### Syntaxe
+
+```css
+selecteur {
+	propriete : valeur ;
+	propriete : valeur ;
+	/* Ceci est un commentaire */
+	propriete : valeur ;
+	...
+}  
+```
+
+**Observations :**
+
+- Chaque ligne doit se terminer par un `;`
+- Tu peux déclarer autant de propriétés que tu le souhaites. Tu peux même déclarer deux fois la même propriété. Dans ce cas, ce sera la dernière qui sera prise en compte (d'où le terme "*cascading*").
+- l'élément stylisé s'appelle "le sélecteur". Il est suivi d'un bloc contenant une ou plusieurs propriétés, enfermées dans des accolades `{}`
+
+**Exemple** : à ton avis, que fait ce bout de code ? 
+
+```css
+p{
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	color: purple;
+}
+```
+
+Pour que le navigateur le prenne en compte, ton CSS doit se trouver soit :
+
+- dans ton fichier html, dans une balise `<style>`
+- dans un fichier css externe, lié à ton html via la balise `<link>`
+
+
+### Concept 1: sélecteurs CSS
+
+Les sélecteurs CSS te permettent de sélectionner dans ton html le contenu à styliser via la balise le contenant.
+
+
 #### Sortir du flux 
 
 Le flux est le comportement par défaut. Tu peux avoir besoin qu'un élément sorte du flux de position. 
@@ -80,13 +127,9 @@ Le flux est le comportement par défaut. Tu peux avoir besoin qu'un élément so
 
 La propriété `position` permet de positionner un élément n'importe où (via les propriétés `top` et `left`), à partir des coordonnées de son premier parent en `position: relative` ou `static`. [Expérimente via ce Pen](https://codepen.io/pixeline/pen/vmzNjw?).
 
-**Exercices :**  
-
-- Réalise une [notification d'interface](https://codepen.io/pixeline/pen/dWqMxe)
-- [exercice de position absolue](https://codepen.io/pixeline/pen/JNaKJv) 
-
 #### Aller plus loin 
 Plus d'informations sur le positionnement CSS: http://fr.learnlayout.com
+
 
 ## 3. Web fonts
 
