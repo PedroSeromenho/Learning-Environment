@@ -154,36 +154,4 @@ Chaque bloc html hérite (= "reçoit par défaut") d'une propriété "display" q
 
 Reprends ton fichier du paysan chinois :
 
-- Fais en sorte que le texte courre autour des images, en utilisant, sur les images, la propriété `float` (ajuste avec du `margin` pour distancier le texte de l'image).   
-
-#### Sortir du flux 
-
-Le flux est le comportement par défaut. Tu peux avoir besoin qu'un élément sorte du flux de position. 
-
-`position : static | relative | absolute | fixed ;`   
-
-La propriété `position` permet de positionner un élément n'importe où (via les propriétés `top` et `left`), à partir des coordonnées de son premier parent en `position: relative` ou `static`. [Expérimente via ce Pen](https://codepen.io/pixeline/pen/vmzNjw?).
-
-**Exercices :**  
-
-- Réalise une [notification d'interface](https://codepen.io/pixeline/pen/dWqMxe)
-- [exercice de position absolue](https://codepen.io/pixeline/pen/JNaKJv) 
-
-#### Aller plus loin 
-Plus d'informations sur le positionnement CSS: http://fr.learnlayout.com
-
-## 3. Web fonts
-
-Par défaut, le navigateur utilise les polices de caractères installées sur l'ordinateur du client. Cependant, tu peux utiliser des polices de caractères spécifiques : les **webfonts**.
-
-**Exercices :**
-
-- Va sur [Google Webfonts](https://fonts.google.com/): change la police de caractère de ton document à celle-ci : Open Sans. Si tu n'y arrives pas, [fais d'abord cet exercice](https://d157rqmxrxj6ey.cloudfront.net/chadsansing/20997/) (clique sur le bouton "remix").
-- Choisis une autre police pour les titres, suffisamment différente.
-
-## 4. Outils utiles
-
-- Élimine le css utilisé par défaut par les navigateurs ([reset.css](https://www.alsacreations.com/astuce/lire/36-reset-css.html)), ou pars sur une base normalisée ([normalize.css](https://github.com/necolas/normalize.css))  
-- Vérifie que ton HTML est **valide** via le [validateur du w3c](https://validator.w3.org/)
-- Vérifie que ton HTML permet **une bonne SEO organique**, via d'autres outils comme le [Google Lighthouse Test](https://developers.google.com/web/tools/lighthouse/) 
-- Installe [Emmet](https://emmet.io/) dans ton éditeur de code.
+- Fais en sorte que le texte courre autour des images, en utilisant, sur les images, la propriété `float` (ajuste avec du `margin` pour distancier le texte de l'image).
