@@ -118,6 +118,42 @@ Pour que le navigateur le prenne en compte, ton CSS doit se trouver soit :
 
 Les sélecteurs CSS te permettent de sélectionner dans ton html le contenu à styliser via la balise le contenant.
 
+### Concept 2: le bloc
+ 
+Toute balise est rendue visuellement sous forme de "bloc" (en anglais on parle du [box model](https://www.w3schools.com/css/css_boxmodel.asp)).  
+
+![Le bloc](css-block.png)  
+
+On peut contrôler les dimensions et les espacements de ce bloc :   
+
+- `width`/ `height` : dimensions de largeur et hauteur 
+- `border`: contrôle la bordure. Par exemple: `border:1px solid #FF0000;` crée un bord fait d'un trait continu (`solid`) rouge `#FF0000` et de 1px d'épaisseur
+- `padding` : l'espace entre le contenu du bloc et son contour (le `border`). Le padding "gonfle" le bloc.  
+- `margin` : l'espace autour du bloc, à l'extérieur de lui. Le margin distancie le bloc de son entourage.  
+
+### Les sélecteurs en CSS (part 2) : 
+#### Les plus courants
+Le plus souvent, on sélectionne les éléments à styliser via l'attribut `class` (`.nom-de-la-classe`) et `id` (`#nom-de-lid`).  
+
+#### Tous les autres sélecteurs
+ 
+-  `+` et `>` 
+-  	Sélectionner via l'attribut `[attribute]`
+-   Il y en a quelques autres. Pour te faire une idée de ce qu'ils permettent, va lire la petite [doc officielle](https://www.w3schools.com/cssref/css_selectors.asp), puis joue à [CSS Diner](http://flukeout.github.io/)
+		
+### Concept 3: le positionnement en CSS
+Le CSS te permet de définir le positionnement visuel des éléments. C'est probablement le plus riche et donc le plus complexe, car les manières de contrôler le positionnement a eu une histoire plutôt compliquée. Il y a longtemps fallu utiliser des *hacks*. Les choses sont plus stables maintenant, surtout s'il ne faut pas supporter les utilisateurs coincés sur internet explorer 9...  Mais reprenons les choses à leur commencement.
+ 
+#### Comprendre le flux
+
+Chaque bloc html hérite (= "reçoit par défaut") d'une propriété "display" qui est soit : `display: inline | inline-block | block`  et s'affiche en fonction de son ordre d'apparition dans le fichier html. C'est ce que l'on appelle le **flux de positionnement naturel** ou plus simplement le **flux**.
+
+-  Théorie interactive : https://codepen.io/pixeline/pen/QvrbPv 
+-  Exercice : un menu horizontal https://codepen.io/pixeline/pen/PmdPYL 
+-  Exercice : une grille https://codepen.io/pixeline/pen/aWavWq  
+-  `float` va laisser le block flotter sur le block suivant (au lieu de le pousser à la ligne)
+
+
 
 #### Sortir du flux 
 
