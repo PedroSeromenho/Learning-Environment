@@ -48,17 +48,6 @@ Les balises permettent d'indiquer la fonction sémantique d'une portion de conte
 <p>Ceci est un paragraphe.</p>
 ```
 
-**Exercices :**  
-
-- Retranscris [ce document Texte](doc-le-paysan-chinois.txt) en sémantique html, donc en utilisant les bons blocs html : Utilise les balises suivantes: `h1`, `h2`, `blockquote`, `q`, `img`, `p`, `img`, `hr`, `figure` et `caption`, `table`, `th`, `tr`, `td`, `ul` ou `ol` et `li`. 
-- Pas de `div` ni de `span` : elles n'apportent aucune sémantique. 
-- Retrouve, pour chacune de ces balises, l'origine de leur nom (c'est comme cela qu'on les retient). En cas de doute, cherche la réponse sur [html5doctor.com](http://html5doctor.com).
-- Ajoute deux ou trois liens de ton choix dans la page html via la balise `a`
-- Y-a-t-il une partie que l'on pourrait considérer comme une entête? Si oui, regroupe la dans une balise `header`. 
-- Et un pied de page? Si oui, regroupe ce contenu là dans une balise `footer`
-- Mets toutes les instances des mots "Bien" et "Mal" dans une balise `span` , `em` ou `strong`. 
-
-
 #### Les attributs html
 Ils permettent de définir les caractéristiques des balises.  Imagine qu'il y ait une balise "humain". 
 
@@ -84,6 +73,115 @@ Voici résumée la syntaxe des balises, attributs et valeurs :
 <balise attribut="valeur">Contenu</balise> 
 ``` 
 
+## 2. Le CSS : contrôler le rendu visuel
+
+Le CSS est la techno qui te permet de contrôler l'aspect visuel de ton contenu.  Par exemple, tu peux contrôler l'aspect du texte via ces propriétés : `font-style`, `font-size`, `color`, `line-height`.
+
+Autrement dit, si le html te permet de structurer le contenu, le CSS te permet de le **maquiller**, le rendre plus visuellement attractif.
+
+
+### Syntaxe
+
+```css
+selecteur {
+	propriete : valeur ;
+	propriete : valeur ;
+	/* Ceci est un commentaire */
+	propriete : valeur ;
+	...
+}  
+```
+
+**Observations :**
+
+- Chaque ligne doit se terminer par un `;`
+- Tu peux déclarer autant de propriétés que tu le souhaites. Tu peux même déclarer deux fois la même propriété. Dans ce cas, ce sera la dernière qui sera prise en compte (d'où le terme "*cascading*").
+- l'élément stylisé s'appelle "le sélecteur". Il est suivi d'un bloc contenant une ou plusieurs propriétés, enfermées dans des accolades `{}`
+
+**Exemple** : à ton avis, que fait ce bout de code ? 
+
+```css
+p{
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	color: purple;
+}
+```
+
+Pour que le navigateur le prenne en compte, ton CSS doit se trouver soit :
+
+- dans ton fichier html, dans une balise `<style>`
+- dans un fichier css externe, lié à ton html via la balise `<link>`
+
+
+### Concept 1: sélecteurs CSS
+
+Les sélecteurs CSS te permettent de sélectionner dans ton html le contenu à styliser via la balise le contenant.
+
+### Concept 2: le bloc
+ 
+Toute balise est rendue visuellement sous forme de "bloc" (en anglais on parle du [box model](https://www.w3schools.com/css/css_boxmodel.asp)).  
+
+![Le bloc](css-block.png)  
+
+On peut contrôler les dimensions et les espacements de ce bloc :   
+
+- `width`/ `height` : dimensions de largeur et hauteur 
+- `border`: contrôle la bordure. Par exemple: `border:1px solid #FF0000;` crée un bord fait d'un trait continu (`solid`) rouge `#FF0000` et de 1px d'épaisseur
+- `padding` : l'espace entre le contenu du bloc et son contour (le `border`). Le padding "gonfle" le bloc.  
+- `margin` : l'espace autour du bloc, à l'extérieur de lui. Le margin distancie le bloc de son entourage.  
+
+### Les sélecteurs en CSS (part 2) : 
+#### Les plus courants
+Le plus souvent, on sélectionne les éléments à styliser via l'attribut `class` (`.nom-de-la-classe`) et `id` (`#nom-de-lid`).  
+
+#### Tous les autres sélecteurs
+ 
+-  `+` et `>` 
+-  	Sélectionner via l'attribut `[attribute]`
+-   Il y en a quelques autres. Pour te faire une idée de ce qu'ils permettent, va lire la petite [doc officielle](https://www.w3schools.com/cssref/css_selectors.asp), puis joue à [CSS Diner](http://flukeout.github.io/)
+		
+### Concept 3: le positionnement en CSS
+Le CSS te permet de définir le positionnement visuel des éléments. C'est probablement le plus riche et donc le plus complexe, car les manières de contrôler le positionnement a eu une histoire plutôt compliquée. Il y a longtemps fallu utiliser des *hacks*. Les choses sont plus stables maintenant, surtout s'il ne faut pas supporter les utilisateurs coincés sur internet explorer 9...  Mais reprenons les choses à leur commencement.
+ 
+#### Comprendre le flux
+
+Chaque bloc html hérite (= "reçoit par défaut") d'une propriété "display" qui est soit : `display: inline | inline-block | block`  et s'affiche en fonction de son ordre d'apparition dans le fichier html. C'est ce que l'on appelle le **flux de positionnement naturel** ou plus simplement le **flux**.
+
+-  Théorie interactive : https://codepen.io/pixeline/pen/QvrbPv 
+-  Exercice : un menu horizontal https://codepen.io/pixeline/pen/PmdPYL 
+-  Exercice : une grille https://codepen.io/pixeline/pen/aWavWq  
+-  `float` va laisser le block flotter sur le block suivant (au lieu de le pousser à la ligne)
+
+
+
+#### Sortir du flux 
+
+Le flux est le comportement par défaut. Tu peux avoir besoin qu'un élément sorte du flux de position. 
+
+`position : static | relative | absolute | fixed ;`   
+
+La propriété `position` permet de positionner un élément n'importe où (via les propriétés `top` et `left`), à partir des coordonnées de son premier parent en `position: relative` ou `static`. [Expérimente via ce Pen](https://codepen.io/pixeline/pen/vmzNjw?).
+
+#### Aller plus loin 
+Plus d'informations sur le positionnement CSS: http://fr.learnlayout.com
+
+
+## 3. Web fonts
+
+Par défaut, le navigateur utilise les polices de caractères installées sur l'ordinateur du client. Cependant, tu peux utiliser des polices de caractères spécifiques : les **webfonts**.
+
+**Exercices :**
+
+- Va sur [Google Webfonts](https://fonts.google.com/): change la police de caractère de ton document à celle-ci : Open Sans. Si tu n'y arrives pas, [fais d'abord cet exercice](https://d157rqmxrxj6ey.cloudfront.net/chadsansing/20997/) (clique sur le bouton "remix").
+- Choisis une autre police pour les titres, suffisamment différente.
+
+## 4. Outils utiles
+
+- Élimine le css utilisé par défaut par les navigateurs ([reset.css](https://www.alsacreations.com/astuce/lire/36-reset-css.html)), ou pars sur une base normalisée ([normalize.css](https://github.com/necolas/normalize.css))  
+- Vérifie que ton HTML est **valide** via le [validateur du w3c](https://validator.w3.org/)
+- Vérifie que ton HTML permet **une bonne SEO organique**, via d'autres outils comme le [Google Lighthouse Test](https://developers.google.com/web/tools/lighthouse/) 
+- Installe [Emmet](https://emmet.io/) dans ton éditeur de code.
 
 ### Crédits
 
